@@ -60,6 +60,7 @@ namespace explore
  */
 class Explore
 {
+
 public:
   Explore();
   ~Explore();
@@ -71,7 +72,7 @@ private:
   /**
    * @brief  Make a global plan
    */
-  void makePlan();
+  void makePlan(std_msgs::Float32MultiArray &a);
 
   /**
    * @brief  Publish a frontiers as markers
@@ -86,6 +87,7 @@ private:
   ros::NodeHandle private_nh_;
   ros::NodeHandle relative_nh_;
   ros::Publisher marker_array_publisher_;
+  ros::Subscriber tag_pos_subcriber_;
   tf::TransformListener tf_listener_;
 
   Costmap2DClient costmap_client_;

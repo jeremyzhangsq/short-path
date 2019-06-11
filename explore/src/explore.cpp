@@ -84,7 +84,8 @@ namespace explore
 
         exploring_timer_ =
                 relative_nh_.createTimer(ros::Duration(1. / planner_frequency_),
-                                         [this](const ros::TimerEvent&) { makePlan(); });
+                                         [this](const ros::TimerEvent&) {
+                    tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pos", 1, &Explore::makePlan, this);});
     }
 
     Explore::~Explore()
@@ -93,12 +94,15 @@ namespace explore
     }
 
 
-    void Explore::makePlan()
+    void Explore::makePlan(std_msgs::Float32MultiArray &a)
     {
         // find frontiers
-        auto pose = costmap_client_.getRobotPose();
+        geometry_msgs::Point point;
+        point.x = a.data[0];
+        point.y = a.data[1];
+        point.z = 0;
         // get frontiers sorted according to cost
-        auto frontiers = search_.searchFrom(pose.position);
+        auto frontiers = search_.searchFrom(point);
         // find non blacklisted frontier
         auto frontier =
                 std::find_if_not(frontiers.begin(), frontiers.end(),
@@ -155,7 +159,8 @@ namespace explore
         // callback for sendGoal, which is called in makePlan). the timer must live
         // until callback is executed.
         oneshot_ = relative_nh_.createTimer(
-                ros::Duration(0, 0), [this](const ros::TimerEvent&) { makePlan(); },
+                ros::Duration(0, 0), [this](const ros::TimerEvent&) {
+                    tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pos", 1, &Explore::makePlan, this);},
                 true);
     }
 
