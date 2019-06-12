@@ -93,6 +93,89 @@ namespace explore
         stop();
     }
 
+    void Explore::visualizeFrontiers(
+            const std::vector<frontier_exploration::Frontier>& frontiers)
+    {
+        std_msgs::ColorRGBA blue;
+        blue.r = 0;
+        blue.g = 0;
+        blue.b = 1.0;
+        blue.a = 1.0;
+        std_msgs::ColorRGBA red;
+        red.r = 1.0;
+        red.g = 0;
+        red.b = 0;
+        red.a = 1.0;
+        std_msgs::ColorRGBA green;
+        green.r = 0;
+        green.g = 1.0;
+        green.b = 0;
+        green.a = 1.0;
+
+        ROS_DEBUG("visualising %lu frontiers", frontiers.size());
+        visualization_msgs::MarkerArray markers_msg;
+        std::vector<visualization_msgs::Marker>& markers = markers_msg.markers;
+        visualization_msgs::Marker m;
+
+        m.header.frame_id = costmap_client_.getGlobalFrameID();
+        m.header.stamp = ros::Time::now();
+        m.ns = "frontiers";
+        m.scale.x = 1.0;
+        m.scale.y = 1.0;
+        m.scale.z = 1.0;
+        m.color.r = 0;
+        m.color.g = 0;
+        m.color.b = 255;
+        m.color.a = 255;
+        // lives forever
+        m.lifetime = ros::Duration(0);
+        m.frame_locked = true;
+
+        // weighted frontiers are always sorted
+        double min_cost = frontiers.empty() ? 0. : frontiers.front().cost;
+
+        m.action = visualization_msgs::Marker::ADD;
+        size_t id = 0;
+        for (auto& frontier : frontiers) {
+            m.type = visualization_msgs::Marker::POINTS;
+            m.id = int(id);
+            m.pose.position = {};
+            m.scale.x = 0.1;
+            m.scale.y = 0.1;
+            m.scale.z = 0.1;
+            m.points = frontier.points;
+            if (goalOnBlacklist(frontier.centroid)) {
+                m.color = red;
+            } else {
+                m.color = blue;
+            }
+            markers.push_back(m);
+            ++id;
+            m.type = visualization_msgs::Marker::SPHERE;
+            m.id = int(id);
+            m.pose.position = frontier.initial;
+            // scale frontier according to its cost (costier frontiers will be smaller)
+            double scale = std::min(std::abs(min_cost * 0.4 / frontier.cost), 0.5);
+            m.scale.x = scale;
+            m.scale.y = scale;
+            m.scale.z = scale;
+            m.points = {};
+            m.color = green;
+            markers.push_back(m);
+            ++id;
+        }
+        size_t current_markers_count = markers.size();
+
+        // delete previous markers, which are now unused
+        m.action = visualization_msgs::Marker::DELETE;
+        for (; id < last_markers_count_; ++id) {
+            m.id = int(id);
+            markers.push_back(m);
+        }
+
+        last_markers_count_ = current_markers_count;
+        marker_array_publisher_.publish(markers_msg);
+    }
 
     void Explore::makePlan(const geometry_msgs::Pose &a)
     {
@@ -102,6 +185,9 @@ namespace explore
         printf("target position:%2f %2f\n",point.x,point.y);
         // get frontiers sorted according to cost
         auto frontiers = search_.searchFrom(point);
+
+        visualizeFrontiers(frontiers);
+
         // find non blacklisted frontier
         auto frontier =
                 std::find_if_not(frontiers.begin(), frontiers.end(),
@@ -118,6 +204,7 @@ namespace explore
         goal.target_pose.pose.orientation.w = 1.;
         goal.target_pose.header.frame_id = costmap_client_.getGlobalFrameID();
         goal.target_pose.header.stamp = ros::Time::now();
+        printf("goal pose: %2f %2f\n",target_position.x,target_position.y);
         move_base_client_.sendGoal(
                 goal, [this, target_position](
                         const actionlib::SimpleClientGoalState& status,
