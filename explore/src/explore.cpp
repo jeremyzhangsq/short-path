@@ -88,9 +88,7 @@ namespace explore
                                          [this](const ros::TimerEvent&) {
                     tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pose", 1, &Explore::makePlan, this);
                     });
-        std_msgs::Bool abool;
-        abool.data = true;
-        camera_publisher_.publish(abool);
+
     }
 
     Explore::~Explore()
@@ -216,6 +214,9 @@ namespace explore
                         const move_base_msgs::MoveBaseResultConstPtr& result) {
                     reachedGoal(status, result, target_position);
                 });
+        std_msgs::Bool abool;
+        abool.data = true;
+        camera_publisher_.publish(abool);
     }
 
     bool Explore::goalOnBlacklist(const geometry_msgs::Point& goal)
@@ -253,9 +254,9 @@ namespace explore
                 ros::Duration(0, 0), [this](const ros::TimerEvent&) {
                     tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pose", 1, &Explore::makePlan, this);},
                 true);
-        std_msgs::Bool abool;
-        abool.data = true;
-        camera_publisher_.publish(abool);
+//        std_msgs::Bool abool;
+//        abool.data = true;
+//        camera_publisher_.publish(abool);
     }
 
     void Explore::start()
