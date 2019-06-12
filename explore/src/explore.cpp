@@ -85,7 +85,7 @@ namespace explore
         exploring_timer_ =
                 relative_nh_.createTimer(ros::Duration(1. / planner_frequency_),
                                          [this](const ros::TimerEvent&) {
-                    tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pos", 1, &Explore::makePlan, this);});
+                    tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pose", 1, &Explore::makePlan, this);});
     }
 
     Explore::~Explore()
@@ -101,6 +101,7 @@ namespace explore
         point.x = a.data[0];
         point.y = a.data[1];
         point.z = 0;
+
         // get frontiers sorted according to cost
         auto frontiers = search_.searchFrom(point);
         // find non blacklisted frontier
@@ -160,7 +161,7 @@ namespace explore
         // until callback is executed.
         oneshot_ = relative_nh_.createTimer(
                 ros::Duration(0, 0), [this](const ros::TimerEvent&) {
-                    tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pos", 1, &Explore::makePlan, this);},
+                    tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pose", 1, &Explore::makePlan, this);},
                 true);
     }
 
