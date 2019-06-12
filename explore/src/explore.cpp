@@ -89,6 +89,7 @@ namespace explore
                     tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pose", 1, &Explore::makePlan, this);
                     });
         const std_msgs::Bool abool;
+        abool.data = true;
         camera_publisher_.publish(abool);
     }
 
@@ -253,6 +254,7 @@ namespace explore
                     tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pose", 1, &Explore::makePlan, this);},
                 true);
         const std_msgs::Bool abool;
+        abool.data = true;
         camera_publisher_.publish(abool);
     }
 
