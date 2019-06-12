@@ -88,7 +88,7 @@ namespace explore
                                          [this](const ros::TimerEvent&) {
                     tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pose", 1, &Explore::makePlan, this);
                     });
-        camera_publisher.publish(true);
+        camera_publisher_.publish(true);
     }
 
     Explore::~Explore()
@@ -251,7 +251,7 @@ namespace explore
                 ros::Duration(0, 0), [this](const ros::TimerEvent&) {
                     tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pose", 1, &Explore::makePlan, this);},
                 true);
-        camera_publisher.publish(true);
+        camera_publisher_.publish(true);
     }
 
     void Explore::start()
