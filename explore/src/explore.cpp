@@ -204,10 +204,11 @@ namespace explore
         // send goal to move_base if we have something new to pursue
         move_base_msgs::MoveBaseGoal goal;
         goal.target_pose.pose.position = target_position;
-        goal.target_pose.pose.orientation = a.orientation;
+        goal.target_pose.pose.orientation.x = a.orientation.x;
+        goal.target_pose.pose.orientation.y = a.orientation.y;
         goal.target_pose.header.frame_id = costmap_client_.getGlobalFrameID();
         goal.target_pose.header.stamp = ros::Time::now();
-        printf("goal pose: %2f %2f\n",target_position.x,target_position.y);
+        printf("goal size: %d goal pose: %2f %2f\n",frontier->size,target_position.x,target_position.y);
         move_base_client_.sendGoal(
                 goal, [this, target_position](
                         const actionlib::SimpleClientGoalState& status,

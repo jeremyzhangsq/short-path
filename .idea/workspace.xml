@@ -12,7 +12,6 @@
     <list default="true" id="83bf318f-c711-4ed9-8ea2-645d61880831" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/explore/src/explore.cpp" afterPath="$PROJECT_DIR$/explore/src/explore.cpp" />
-      <change beforePath="$PROJECT_DIR$/explore/src/frontier_search.cpp" afterPath="$PROJECT_DIR$/explore/src/frontier_search.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,8 +56,8 @@
       <file leaf-file-name="explore.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/explore/src/explore.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="206" column="57" lean-forward="false" selection-start-line="206" selection-start-column="57" selection-end-line="206" selection-end-column="57" />
+            <state relative-caret-position="337">
+              <caret line="207" column="8" lean-forward="true" selection-start-line="207" selection-start-column="8" selection-end-line="207" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -67,8 +66,8 @@
       <file leaf-file-name="frontier_search.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/explore/src/frontier_search.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="126" column="9" lean-forward="false" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
+            <state relative-caret-position="-21">
+              <caret line="98" column="23" lean-forward="false" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -212,7 +211,7 @@
       <workItem from="1560282575883" duration="3771000" />
       <workItem from="1560321519218" duration="219000" />
       <workItem from="1560322149895" duration="6259000" />
-      <workItem from="1560345244746" duration="1423000" />
+      <workItem from="1560345244746" duration="2087000" />
     </task>
     <task id="LOCAL-00001" summary="todo: find apriltag pose">
       <created>1560284547339</created>
@@ -375,11 +374,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560345506746</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Default Changelist">
+      <created>1560346672674</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1560346672674</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11672000" />
+    <option name="totallyTimeSpent" value="12336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1863" height="1096" extended-state="6" />
@@ -525,16 +531,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/explore/src/frontier_search.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="126" column="9" lean-forward="false" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
+        <state relative-caret-position="-21">
+          <caret line="98" column="23" lean-forward="false" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/explore/src/explore.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="206" column="57" lean-forward="false" selection-start-line="206" selection-start-column="57" selection-end-line="206" selection-end-column="57" />
+        <state relative-caret-position="337">
+          <caret line="207" column="8" lean-forward="true" selection-start-line="207" selection-start-column="8" selection-end-line="207" selection-end-column="62" />
           <folding />
         </state>
       </provider>
