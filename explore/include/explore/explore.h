@@ -73,7 +73,7 @@ private:
   /**
    * @brief  Make a global plan
    */
-  void makePlan(geometry_msgs::Pose &a);
+  void makePlan(const geometry_msgs::Pose &a);
 
   /**
    * @brief  Publish a frontiers as markers

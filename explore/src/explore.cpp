@@ -94,7 +94,7 @@ namespace explore
     }
 
 
-    void Explore::makePlan(geometry_msgs::Pose &a)
+    void Explore::makePlan(const geometry_msgs::Pose &a)
     {
         // find frontiers
         geometry_msgs::Point point = a.position;
