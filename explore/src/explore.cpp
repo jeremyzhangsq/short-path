@@ -214,9 +214,9 @@ namespace explore
                         const move_base_msgs::MoveBaseResultConstPtr& result) {
                     reachedGoal(status, result, target_position);
                 });
-//        std_msgs::Bool abool;
-//        abool.data = true;
-//        camera_publisher_.publish(abool);
+        std_msgs::Bool abool;
+        abool.data = true;
+        camera_publisher_.publish(abool);
     }
 
     bool Explore::goalOnBlacklist(const geometry_msgs::Point& goal)
