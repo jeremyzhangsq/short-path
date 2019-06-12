@@ -73,7 +73,7 @@ private:
   /**
    * @brief  Make a global plan
    */
-  void Explore::visualizeFrontiers(
+  void visualizeFrontiers(
           const std::vector<frontier_exploration::Frontier>& frontiers);
   void makePlan(const geometry_msgs::Pose &a);
 
