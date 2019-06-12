@@ -97,9 +97,9 @@ namespace explore
     void Explore::makePlan(const geometry_msgs::Pose &a)
     {
         // find frontiers
-        printf("making plan...\n");
-        geometry_msgs::Point point = a.position;
 
+        geometry_msgs::Point point = a.position;
+        printf("target position:%2f %2f\n",point.x,point.y);
         // get frontiers sorted according to cost
         auto frontiers = search_.searchFrom(point);
         // find non blacklisted frontier
