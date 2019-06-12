@@ -90,6 +90,7 @@ private:
   ros::NodeHandle private_nh_;
   ros::NodeHandle relative_nh_;
   ros::Publisher marker_array_publisher_;
+  ros::Publisher camera_publisher_;
   ros::Subscriber tag_pos_subcriber_;
   tf::TransformListener tf_listener_;
 
