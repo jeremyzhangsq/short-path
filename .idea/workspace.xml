@@ -9,9 +9,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83bf318f-c711-4ed9-8ea2-645d61880831" name="Default Changelist" comment="">
+    <list default="true" id="83bf318f-c711-4ed9-8ea2-645d61880831" name="Default Changelist" comment="communicate with pokemon search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/explore/include/explore/explore.h" beforeDir="false" afterPath="$PROJECT_DIR$/explore/include/explore/explore.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/explore/src/explore.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/explore/src/explore.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,56 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/explore/src/explore.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="95" column="11" lean-forward="true" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
+            <state relative-caret-position="209">
+              <caret line="70" column="63" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/explore/include/explore/costmap_client.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="68" column="16" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/explore/src/frontier_search.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/explore/include/explore/frontier_search.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/explore/src/costmap_client.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4104">
-              <caret line="228" column="2" selection-start-line="228" selection-start-column="2" selection-end-line="228" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/explore/include/explore/explore.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+            <state relative-caret-position="297">
+              <caret line="92" column="17" lean-forward="true" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -117,6 +81,7 @@
       <find>private_nh</find>
       <find>Pose</find>
       <find>makePlan</find>
+      <find>camera_publisher</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,8 +102,8 @@
         <option value="$PROJECT_DIR$/explore/package.xml" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/explore/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/explore/src/explore.cpp" />
         <option value="$PROJECT_DIR$/explore/include/explore/explore.h" />
+        <option value="$PROJECT_DIR$/explore/src/explore.cpp" />
       </list>
     </option>
   </component>
@@ -164,6 +129,19 @@
             <path>
               <item name="m_explore" type="b2602c69:ProjectViewProjectNode" />
               <item name="short-path" type="462c0819:PsiDirectoryNode" />
+              <item name="explore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m_explore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="short-path" type="462c0819:PsiDirectoryNode" />
+              <item name="explore" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="m_explore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="short-path" type="462c0819:PsiDirectoryNode" />
+              <item name="explore" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
               <item name="explore" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -208,7 +186,7 @@
       <updated>1560282572965</updated>
       <workItem from="1560282575883" duration="3771000" />
       <workItem from="1560321519218" duration="219000" />
-      <workItem from="1560322149895" duration="1649000" />
+      <workItem from="1560322149895" duration="4166000" />
     </task>
     <task id="LOCAL-00001" summary="todo: find apriltag pose">
       <created>1560284547339</created>
@@ -287,11 +265,32 @@
       <option name="project" value="LOCAL" />
       <updated>1560324193502</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="visualize frontier">
+      <created>1560324276855</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560324276855</updated>
+    </task>
+    <task id="LOCAL-00013" summary="communicate with pokemon search">
+      <created>1560334829580</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1560334829580</updated>
+    </task>
+    <task id="LOCAL-00014" summary="communicate with pokemon search">
+      <created>1560335125311</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1560335125311</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5639000" />
+    <option name="totallyTimeSpent" value="8156000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="952" extended-state="0" />
@@ -308,10 +307,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50183153" side_tool="true" visible="true" weight="0.32906976" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4993895" visible="true" weight="0.32906976" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50061053" side_tool="true" visible="true" weight="0.32906976" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.4981685" visible="true" weight="0.32906976" />
+      <window_info anchor="bottom" id="CMake" order="11" sideWeight="0.4981685" weight="0.32906976" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -327,7 +326,8 @@
     <MESSAGE value="rename" />
     <MESSAGE value="print" />
     <MESSAGE value="visualize frontier" />
-    <option name="LAST_COMMIT_MESSAGE" value="visualize frontier" />
+    <MESSAGE value="communicate with pokemon search" />
+    <option name="LAST_COMMIT_MESSAGE" value="communicate with pokemon search" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/map_merge/test/test_merging_pipeline.cpp" />
@@ -353,13 +353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/explore/include/explore/costmap_client.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="68" column="16" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/explore/include/explore/frontier_search.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -374,13 +367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/explore/src/frontier_search.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="96" column="33" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/explore/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -388,17 +374,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/explore/src/explore.cpp">
+    <entry file="file://$PROJECT_DIR$/explore/src/frontier_search.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="95" column="11" lean-forward="true" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
+        <state relative-caret-position="1800">
+          <caret line="100" column="34" lean-forward="true" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/explore/include/explore/costmap_client.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="68" column="16" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/explore/include/explore/explore.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+        <state relative-caret-position="297">
+          <caret line="92" column="17" lean-forward="true" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/explore/src/explore.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="70" column="63" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
         </state>
       </provider>
     </entry>
