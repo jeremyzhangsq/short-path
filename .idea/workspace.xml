@@ -9,12 +9,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83bf318f-c711-4ed9-8ea2-645d61880831" name="Default Changelist" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/short-path.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="83bf318f-c711-4ed9-8ea2-645d61880831" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change beforePath="$PROJECT_DIR$/explore/src/explore.cpp" afterPath="$PROJECT_DIR$/explore/src/explore.cpp" />
       <change beforePath="$PROJECT_DIR$/explore/src/frontier_search.cpp" afterPath="$PROJECT_DIR$/explore/src/frontier_search.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -57,21 +54,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="explore.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="explore.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/explore/src/explore.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="210" column="35" lean-forward="true" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
+            <state relative-caret-position="190">
+              <caret line="206" column="57" lean-forward="false" selection-start-line="206" selection-start-column="57" selection-end-line="206" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frontier_search.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="frontier_search.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/explore/src/frontier_search.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-105">
-              <caret line="100" column="21" lean-forward="false" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+            <state relative-caret-position="315">
+              <caret line="126" column="9" lean-forward="false" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -94,7 +91,6 @@
       <find>main</find>
       <find>move_base</find>
       <find>goalOnBlacklist</find>
-      <find>reachedGoal</find>
       <find>getRobotPose</find>
       <find>relative_nh_</find>
       <find>private_nh</find>
@@ -105,6 +101,7 @@
       <find>std_msgs</find>
       <find>Bool</find>
       <find>nearestCell</find>
+      <find>reachedGoal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,8 +122,8 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/explore/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/explore/include/explore/explore.h" />
-        <option value="$PROJECT_DIR$/explore/src/explore.cpp" />
         <option value="$PROJECT_DIR$/explore/src/frontier_search.cpp" />
+        <option value="$PROJECT_DIR$/explore/src/explore.cpp" />
       </list>
     </option>
   </component>
@@ -215,7 +212,7 @@
       <workItem from="1560282575883" duration="3771000" />
       <workItem from="1560321519218" duration="219000" />
       <workItem from="1560322149895" duration="6259000" />
-      <workItem from="1560345244746" duration="257000" />
+      <workItem from="1560345244746" duration="1423000" />
     </task>
     <task id="LOCAL-00001" summary="todo: find apriltag pose">
       <created>1560284547339</created>
@@ -371,11 +368,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560342465472</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Default Changelist">
+      <created>1560345506746</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1560345506746</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10506000" />
+    <option name="totallyTimeSpent" value="11672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1863" height="1096" extended-state="6" />
@@ -415,7 +419,8 @@
     <MESSAGE value="print" />
     <MESSAGE value="visualize frontier" />
     <MESSAGE value="communicate with pokemon search" />
-    <option name="LAST_COMMIT_MESSAGE" value="communicate with pokemon search" />
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -518,18 +523,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/explore/src/explore.cpp">
+    <entry file="file://$PROJECT_DIR$/explore/src/frontier_search.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="210" column="35" lean-forward="true" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
+        <state relative-caret-position="315">
+          <caret line="126" column="9" lean-forward="false" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/explore/src/frontier_search.cpp">
+    <entry file="file://$PROJECT_DIR$/explore/src/explore.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="100" column="21" lean-forward="false" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+        <state relative-caret-position="190">
+          <caret line="206" column="57" lean-forward="false" selection-start-line="206" selection-start-column="57" selection-end-line="206" selection-end-column="57" />
           <folding />
         </state>
       </provider>

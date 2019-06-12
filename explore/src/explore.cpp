@@ -204,7 +204,7 @@ namespace explore
         // send goal to move_base if we have something new to pursue
         move_base_msgs::MoveBaseGoal goal;
         goal.target_pose.pose.position = target_position;
-        goal.target_pose.pose.orientation.w = 1.;
+        goal.target_pose.pose.orientation = a.orientation;
         goal.target_pose.header.frame_id = costmap_client_.getGlobalFrameID();
         goal.target_pose.header.stamp = ros::Time::now();
         printf("goal pose: %2f %2f\n",target_position.x,target_position.y);
@@ -214,9 +214,6 @@ namespace explore
                         const move_base_msgs::MoveBaseResultConstPtr& result) {
                     reachedGoal(status, result, target_position);
                 });
-        std_msgs::Bool abool;
-        abool.data = true;
-        camera_publisher_.publish(abool);
     }
 
     bool Explore::goalOnBlacklist(const geometry_msgs::Point& goal)
@@ -254,9 +251,10 @@ namespace explore
                 ros::Duration(0, 0), [this](const ros::TimerEvent&) {
                     tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pose", 1, &Explore::makePlan, this);},
                 true);
-//        std_msgs::Bool abool;
-//        abool.data = true;
-//        camera_publisher_.publish(abool);
+
+        std_msgs::Bool abool;
+        abool.data = true;
+        camera_publisher_.publish(abool);
     }
 
     void Explore::start()

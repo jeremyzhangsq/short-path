@@ -125,13 +125,11 @@ Frontier FrontierSearch::buildNewFrontier(unsigned int initial_cell,
           output.middle.x = wx;
           output.middle.y = wy;
         }
-
         // add to queue for breadth first search
         bfs.push(nbr);
       }
     }
   }
-
   // average out frontier centroid
   output.centroid.x /= output.size;
   output.centroid.y /= output.size;
