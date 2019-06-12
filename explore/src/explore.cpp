@@ -88,7 +88,7 @@ namespace explore
                                          [this](const ros::TimerEvent&) {
                     tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pose", 1, &Explore::makePlan, this);
                     });
-        const std_msgs::Bool abool;
+        std_msgs::Bool abool;
         abool.data = true;
         camera_publisher_.publish(abool);
     }
@@ -253,7 +253,7 @@ namespace explore
                 ros::Duration(0, 0), [this](const ros::TimerEvent&) {
                     tag_pos_subcriber_ = relative_nh_.subscribe("/apriltag_pose", 1, &Explore::makePlan, this);},
                 true);
-        const std_msgs::Bool abool;
+        std_msgs::Bool abool;
         abool.data = true;
         camera_publisher_.publish(abool);
     }
