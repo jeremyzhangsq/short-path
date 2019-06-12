@@ -97,6 +97,7 @@ namespace explore
     void Explore::makePlan(const geometry_msgs::Pose &a)
     {
         // find frontiers
+        printf("making plan...\n");
         geometry_msgs::Point point = a.position;
 
         // get frontiers sorted according to cost
