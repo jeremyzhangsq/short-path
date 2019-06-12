@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="m_explore"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/jeremy/Documents/m-explore/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/jeremy/Documents/m-explore/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/jeremy/Documents/m-explore/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="m_explore">
+				<Option output="/Users/jeremy/Documents/m-explore/cmake-build-debug/m_explore" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jeremy/Documents/m-explore/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/jeremy/Documents/m-explore/explore/include"/>
+					<Add directory="/Users/jeremy/Documents/m-explore/explore/include/explore"/>
+					<Add directory="/Users/jeremy/Documents/m-explore/map_merge/include"/>
+					<Add directory="/Users/jeremy/Documents/m-explore/map_merge/include/combine_grids"/>
+					<Add directory="/Users/jeremy/Documents/m-explore/map_merge/include/map_merge"/>
+					<Add directory="/Users/jeremy/Documents/m-explore/map_merge/src/combine_grids"/>
+					<Add directory="/Users/jeremy/Documents/m-explore/map_merge/test"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 m_explore"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="m_explore/fast">
+				<Option output="/Users/jeremy/Documents/m-explore/cmake-build-debug/m_explore" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jeremy/Documents/m-explore/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/jeremy/Documents/m-explore/explore/include"/>
+					<Add directory="/Users/jeremy/Documents/m-explore/explore/include/explore"/>
+					<Add directory="/Users/jeremy/Documents/m-explore/map_merge/include"/>
+					<Add directory="/Users/jeremy/Documents/m-explore/map_merge/include/combine_grids"/>
+					<Add directory="/Users/jeremy/Documents/m-explore/map_merge/include/map_merge"/>
+					<Add directory="/Users/jeremy/Documents/m-explore/map_merge/src/combine_grids"/>
+					<Add directory="/Users/jeremy/Documents/m-explore/map_merge/test"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 m_explore/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/jeremy/Documents/m-explore/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/jeremy/Documents/m-explore/LICENSE">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/README.md">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/CHANGELOG.rst">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/CMakeLists.txt">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/doc/architecture.dia">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/doc/screenshot.png">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/doc/wiki_doc.txt">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/include/explore/costmap_client.h">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/include/explore/costmap_tools.h">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/include/explore/explore.h">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/include/explore/frontier_search.h">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/launch/explore.launch">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/launch/explore_costmap.launch">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/package.xml">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/src/costmap_client.cpp">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/src/explore.cpp">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/explore/src/frontier_search.cpp">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/CHANGELOG.rst">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/CMakeLists.txt">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/doc/architecture.dia">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/doc/screenshot.jpg">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/doc/wiki_doc.txt">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/include/combine_grids/grid_compositor.h">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/include/combine_grids/grid_warper.h">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/include/combine_grids/merging_pipeline.h">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/include/map_merge/map_merge.h">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/launch/experiments/3-robots.ttt.launch">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/launch/experiments/demo-scene-1.ttt.launch">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/launch/experiments/demo-scene-orientation-exp.ttt.launch">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/launch/from_map_server.launch">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/launch/map_merge.launch">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/launch/map_merge.rviz">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/package.xml">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/src/combine_grids/estimation_internal.h">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/src/combine_grids/grid_compositor.cpp">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/src/combine_grids/grid_warper.cpp">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/src/combine_grids/merging_pipeline.cpp">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/src/map_merge.cpp">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/test/test_merging_pipeline.cpp">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/map_merge/test/testing_helpers.h">
+			<Option target="m_explore"/>
+		</Unit>
+		<Unit filename="/Users/jeremy/Documents/m-explore/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
