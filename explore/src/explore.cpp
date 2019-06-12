@@ -68,7 +68,7 @@ namespace explore
         private_nh_.param("orientation_scale", orientation_scale_, 0.0);
         private_nh_.param("gain_scale", gain_scale_, 1.0);
         private_nh_.param("min_frontier_size", min_frontier_size, 0.5);
-        camera_publisher_ = relative_nh_.advertise<std_msgs::Bool>("apriltag_save",1);
+        camera_publisher_ = relative_nh_.advertise<const std_msgs::Bool>("apriltag_save",1);
 
         search_ = frontier_exploration::FrontierSearch(costmap_client_.getCostmap(),
                                                        potential_scale_, gain_scale_,
