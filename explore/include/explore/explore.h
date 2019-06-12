@@ -41,7 +41,7 @@
 #include <mutex>
 #include <string>
 #include <vector>
-
+#include <std_msgs/Bool.h>
 #include <actionlib/client/simple_action_client.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <geometry_msgs/Pose.h>
