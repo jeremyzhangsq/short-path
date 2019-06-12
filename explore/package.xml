@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>explore_lite</name>
+  <name>short</name>
   <version>2.1.1</version>
 
   <description>Lightweight frontier-based exploration.</description>
