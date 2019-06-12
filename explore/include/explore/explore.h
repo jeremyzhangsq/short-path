@@ -72,7 +72,7 @@ private:
   /**
    * @brief  Make a global plan
    */
-  void makePlan(std_msgs::Float32MultiArray &a);
+  void makePlan(geometry_msgs::Pose &a);
 
   /**
    * @brief  Publish a frontiers as markers

@@ -94,13 +94,10 @@ namespace explore
     }
 
 
-    void Explore::makePlan(std_msgs::Float32MultiArray &a)
+    void Explore::makePlan(geometry_msgs::Pose &a)
     {
         // find frontiers
-        geometry_msgs::Point point;
-        point.x = a.data[0];
-        point.y = a.data[1];
-        point.z = 0;
+        geometry_msgs::Point point = a.position;
 
         // get frontiers sorted according to cost
         auto frontiers = search_.searchFrom(point);
